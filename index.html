@@ -50,12 +50,12 @@
 	<div class="section" id="blog1-posts-list">
 		<h1 id="id165">博客</h1>
 		<p>我现在主要更新的是托管在github上的<a href="http://chen.yanping.me/cn" target="_blank">Octopress博客</a>，主要记录自己在学习过程中的心得体会。近期内容：</p>
-		<div class="loading"><img src="/images/loading.gif">正在加载...</div>
+		<div class="loading"><img src="./images/loading.gif">正在加载...</div>
 	</div>	
 	
 	<div class="section" id="blog2-posts-list">
 	<p>我还有个文艺点儿的<a href="http://art.yanping.me" target="_blank">博客</a>，写写跟技术无关的东西。近期内容：</p>
-	<div class="loading"><img src="/images/loading.gif">正在加载...</div>
+	<div class="loading"><img src="./images/loading.gif">正在加载...</div>
 	</div>
 		
 
@@ -141,11 +141,7 @@
 				$("#blog1-posts-list .loading").remove();
 				$("#blog1-posts-list").append(content);
 			});
-		});	
-	</script>
-	
-		<script type="text/javascript">
-		$(document).ready(function() {
+
 			$.getJSON("/art/recent.json",function(data){
 				var content ="<ul class=\"compact recent\">";
 				$.each(data,function(i,item){
